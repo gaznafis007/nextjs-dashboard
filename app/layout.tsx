@@ -1,3 +1,10 @@
+import "@/app/ui/global.css";
+import { montserrat } from "./ui/fonts";
+
+export const metadata = {
+  title: "Acme",
+  description: "This is a website of next-js dashboard named Acme"
+}
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={montserrat.className}>{children}</body>
     </html>
   );
 }
